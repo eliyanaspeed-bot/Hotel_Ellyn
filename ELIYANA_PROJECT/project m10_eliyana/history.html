@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riwayat Pemesanan - Hotel Ellyn</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      /* Gaya khusus untuk halaman riwayat */
+      body {
+        background-color: #f8f9fa; /* Light gray background */
+        padding-top: 70px; /* Jarak dari fixed navbar */
+      }
+      .container-history {
+        max-width: 900px;
+      }
+      .card-history {
+        border-left: 5px solid #0d6efd; /* Border biru untuk penekanan */
+        transition: transform 0.2s;
+      }
+      .card-history:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #007bff"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fa-solid fa-hotel"></i> Hotel Ellyn</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#jenis-kamar">Kamar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#fasilitas">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Riwayat Saya</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container container-history mt-5">
+      <h1 class="text-center mb-4">
+        <i class="fas fa-history me-2 text-primary"></i> Riwayat Pemesanan &
+        Pembayaran
+      </h1>
+      <p class="text-center text-muted mb-5">
+        Berikut adalah detail semua transaksi pemesanan kamar Anda.
+      </p>
+
+      <div class="card shadow-sm mb-4 card-history">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title text-success mb-0">
+              <i class="fas fa-check-circle me-1"></i> Transaksi #HMB5-20250710
+            </h5>
+            <span class="badge bg-success py-2 px-3">PEMBAYARAN LUNAS</span>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Jenis Kamar:</strong> Suite Room</p>
+              <p class="mb-1"><strong>Total Harga:</strong> Rp 4.500.000</p>
+              <p class="mb-1"><strong>Tanggal Pemesanan:</strong> 2025-06-28</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p class="mb-1"><strong>Check-in:</strong> 10 Juli 2025</p>
+              <p class="mb-1"><strong>Check-out:</strong> 13 Juli 2025</p>
+              <p class="mb-1"><strong>Durasi:</strong> 3 Malam</p>
+            </div>
+          </div>
+          <div class="mt-3 text-end">
+            <button
+              onclick="window.open('invoice_detail.html', '_blank')"
+              class="btn btn-primary btn-sm me-2"
+            >
+              <i class="fas fa-print me-1"></i> Cetak Bukti Bayar
+            </button>
+            <a
+              href="invoice_detail.html"
+              target="_blank"
+              class="btn btn-outline-secondary btn-sm"
+              >Lihat Invoice</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card shadow-sm mb-4 card-history"
+        style="border-left-color: #ffc107"
+      >
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title text-warning mb-0">
+              <i class="fas fa-clock me-1"></i> Transaksi #HMB5-20250715
+            </h5>
+            <span class="badge bg-warning text-dark py-2 px-3"
+              >MENUNGGU PEMBAYARAN</span
+            >
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Jenis Kamar:</strong> Deluxe Room</p>
+              <p class="mb-1"><strong>Total Harga:</strong> Rp 2.400.000</p>
+              <p class="mb-1">
+                <strong>Batas Pembayaran:</strong> 2025-07-01 23:59 WIB
+              </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p class="mb-1"><strong>Check-in:</strong> 15 Juli 2025</p>
+              <p class="mb-1"><strong>Check-out:</strong> 18 Juli 2025</p>
+              <p class="mb-1"><strong>Durasi:</strong> 3 Malam</p>
+            </div>
+          </div>
+          <div class="mt-3 text-end">
+            <button class="btn btn-warning btn-sm me-2 text-dark">
+              <i class="fas fa-money-bill-wave me-1"></i> Lakukan Pembayaran
+            </button>
+            <button class="btn btn-outline-danger btn-sm">
+              Batalkan Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card shadow-sm mb-4 card-history"
+        style="border-left-color: #dc3545"
+      >
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title text-danger mb-0">
+              <i class="fas fa-times-circle me-1"></i> Transaksi #HMB5-20250520
+            </h5>
+            <span class="badge bg-danger py-2 px-3">DIBATALKAN</span>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Jenis Kamar:</strong> Standard Room</p>
+              <p class="mb-1"><strong>Total Harga:</strong> Rp 1.000.000</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p class="mb-1">
+                <strong>Tanggal Pembatalan:</strong> 2025-05-15
+              </p>
+            </div>
+          </div>
+          <div class="mt-3 text-end">
+            <button class="btn btn-outline-info btn-sm" disabled>
+              Lihat Detail Batal
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2025 | Hotel Ellyn</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
