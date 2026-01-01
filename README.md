@@ -5,7 +5,7 @@ ELIYANA MARSELA CIKMURA (20240810085) _ Project Praktikum Web Desain Modul 10 _ 
 Tugas perancangan desain web statis untuk sistem informasi perhotelan. Proyek ini dibangun menggunakan **Bootstrap 5** dan **CSS3 Native** tanpa menggunakan database (Client-side only).
 
 ## Live Demo
-[KLIK DI SINI UNTUK MELIHAT WEBSITE](MASUKKAN_LINK_GITHUB_PAGES_KAMU_DI_SINI)
+[KLIK DI SINI UNTUK MELIHAT WEBSITE](https://eliyanaspeed-bot.github.io/Hotel_Ellyn/)
 
 ## Aktor/Pengguna
 1. **Tamu/User:** Dapat melihat kamar, fasilitas, dan riwayat pemesanan.
